@@ -1,7 +1,20 @@
+import { Outlet } from "react-router-dom"
+import Navbar from "./components/shared/navbar"
+import Footer from "./components/shared/footer"
+
 function App() {
 
   return (
-    <h2 className="text-red-600 text-center">This new  E-commerce website client. </h2>
+
+
+    <>
+      <Navbar />
+      <main className="min-h-[85vh]">
+        <Outlet />
+      </main>
+      <Footer />
+    </>
+
   )
 }
 

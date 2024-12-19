@@ -7,8 +7,10 @@ import { routre } from './router/router.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={routre}>
-    <App />
-    </RouterProvider>
+    <div className='mx-auto'>
+      <RouterProvider router={routre}>
+        <App />
+      </RouterProvider>
+    </div>
   </StrictMode>,
 )
